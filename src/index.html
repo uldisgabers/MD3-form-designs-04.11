@@ -10,15 +10,193 @@
     <link rel="icon" href="/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="assets/reset.css">
     <link rel="stylesheet" href="/styles.css">
-    <title>Document</title>
+    <title>MD3-forms</title>
 </head>
 <body>
-    <h1>
-        Hello World
-    </h1>
-    <img src="/assets/images/cat.jpeg" alt="" width="300">
-
-
-    <script src="/scripts.js"></script>
+    <section class="form-1-section">
+        <div class="form-1">
+            <form name="log-in-details" style="width: 100%;">
+                <label for="email" class="">E-mail adress</label><br>
+                <input type="email" class="input-box" id="email" name="email" placeholder="example@codelex.lv" required><br>
+                <br>
+                <label for="password">Password</label><br>
+                <input type="password" class="input-box" id="password" name="password" placeholder="••••••••" required>
+                <div class="subscribe-switch">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                    <label> Subscribe to News</label>
+                </div>
+                <button class="sign-in-button">Sign In</button>
+            </form>         
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="forgot-pass-link">Forgot your password?</a>
+            <div class="form-1__line"></div>
+            <p>or continue with</p>
+            <div class="social-button-container">
+                <button class="social-button">
+                    <i class="ai-google-fill social-button__icon"></i>
+                </button>
+                <button class="social-button">
+                    <i class="ai-facebook-fill social-button__icon"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section>
+        <form>
+            <div class="form-2">
+                <h1>Contact Us</h1>
+                <div>
+                    <div class="row row--margins">
+                        <div class="col-sm-6 col-12">
+                            <label for="name" class="input-box--margin">Your Name</label><br>
+                            <input type="text" class="input-box" id="name" name="name" placeholder="John Birch" required>
+                        </div>
+                        <div class="col-sm-6 col-12">
+                            <label for="number" class="input-box--margin">Your age</label><br>
+                            <input type="number" class="input-box" id="number" name="number" placeholder="" required>
+                        </div>
+                        <div class="col-sm-6 col-12">
+                            <label for="email-2" class="input-box--margin">E-mail adress</label><br>
+                            <input type="email" class="input-box" id="email-2" name="email" placeholder="example@codelex.lv" required>
+                        </div>
+                        <div class="col-sm-6 col-12">
+                            <div class="input-box--margin">
+                                <label for="gender">
+                                    Your Gender
+                                    <br>
+                                </label>
+                                <select class="input-box" name="gender" id="gender" required>
+                                    <option disabled selected>Choose your gender</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="apche">Apache Helicopter</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <label class="form-2__checkbox-input">
+                    <input type="checkbox" class="custom-checkbox">
+                    Subscribe to News
+                </label>
+                <label style="width: 100%;">
+                    Message
+                    <br>
+                    <textarea class="form-2__textarea" name="textarea" value="" placeholder="Type Message" required></textarea>
+                </label>
+                <button class="submit-button">Submit</button>
+            </div>
+        </form>
+    </section>
+    <section> 
+        <div class="form-3-container">
+            <div class="contact-info">
+                <p>Contact Information</p>
+                <p>Here’s some additional support text to help set user expectations. </p>
+                <div>
+                    <div style="gap: 8px">
+                        <i class="ai-phone"></i>
+                        <span>123-456-7890</span>
+                    </div>
+                    <div>
+                        <i class="ai-envelope"></i>
+                        <span>support@minerva.com</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <form>
+                    <div class="form-3">
+                        <h1>Contact Us</h1>
+                        <div>
+                            <div class="row row--margins">
+                                <div class="col-sm-6 col-12">
+                                    <label for="name-1" class="input-box--margin">Your Name</label><br>
+                                    <input type="text" class="input-box" id="name-1" name="name" placeholder="John" required>
+                                </div>
+                                <div class="col-sm-6 col-12">
+                                    <label for="surname" class="input-box--margin">Your Last name</label><br>
+                                    <input type="text" class="input-box" id="surname" name="surname" placeholder="Birch" required>
+                                </div>
+                                <div class="col-sm-6 col-12">
+                                    <label for="email-3" class="input-box--margin">E-mail adress</label><br>
+                                    <input type="email" class="input-box" id="email-3" name="email" placeholder="example@codelex.lv" required>
+                                </div>
+                                <div class="col-sm-6 col-12">
+                                    <label for="date" class="input-box--margin">Your date of birth</label>
+                                    <input type="date" class="input-box" id="date" required>
+                                </div>
+                            </div>
+                            <label for="topic" class="input-box--margin" style="width: 100%;">
+                                Topic
+                                <input type="text" class="input-box" id="topic" name="topic" placeholder="What is love" required>
+                            </label>
+                            <label style="width: 100%;">
+                                Message  
+                                <textarea class="form-2__textarea" name="textarea" value="" placeholder="Type Message" required></textarea>
+                            </label> 
+                        </div>
+                        <button class="submit-button">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>              
+    </section>
+    <section>
+        <div class="form-4">
+            <h1>Checkout</h1>
+            <div class="order-info">
+                <div class="order-info__box">
+                    <h2>Your Order</h2>
+                    <div style="padding-left: 56px;">
+                        <h3>Eggshell Plant Pot</h3>
+                        <p class="p--format">Size: Medium</p>
+                        <p class="p--format">Qty: 1</p>
+                        <p class="p--format">$25.00</p>
+                    </div>
+                </div>
+                <div class="mobile-line"></div>
+                <div class="order-info__box">
+                    <h2>Delivery Details</h2>
+                    <div class="delivery-info">
+                        <div>
+                            <h3>Adam Sandler</h3>
+                            <p class="p--format">1234 Fake St</p>
+                            <p class="p--format">Milwaukee, WI 53203</p>
+                        </div>
+                        <div>
+                            <h3>Shipping Speed</h3>
+                            <p class="p--format">$7.00 No Rush Shipping</p>
+                            <p class="p--format">Arrives by 1/16/22</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h2>Payment Method</h2>
+                <form >
+                    <div class="row">
+                        <label for="card-number" class="col-sm-6 col-12">
+                            Card number
+                            <input type="number" id="card-number" class="input-box" placeholder="1234-5678-1234-5678" required>
+                        </label>                       
+                        <label for="card-date" class="col-sm-3 col-6">
+                            Expiration date
+                            <input type="month" id="card-date" class="input-box" placeholder="" required>
+                        </label>
+                        <label for="cvs-code" class="col-sm-3 col-6">
+                            CVS code
+                            <input type="number" id="cvs-code" class="input-box" minlength="3" placeholder="123" required>
+                        </label>                   
+                    </div>
+                    <div class="continue-button--wrpapper">
+                        <button class="continue-button">Continue</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
